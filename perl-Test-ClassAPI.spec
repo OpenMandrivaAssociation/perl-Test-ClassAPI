@@ -11,6 +11,7 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Test/%{real_name}-%{versi
 BuildRequires:	perl-devel
 BuildRequires:	perl(Class::Inspector) >= 1.06
 BuildRequires:	perl(Config::Tiny) >= 2.0
+Buildrequires:  perl(Params::Util)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
