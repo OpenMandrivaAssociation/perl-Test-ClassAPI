@@ -2,7 +2,7 @@
 
 Summary:	Test::ClassAPI - Provides basic first-pass API testing for large class trees
 Name:		perl-%{real_name}
-Version:	1.05
+Version:	1.06
 Release: %mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
