@@ -1,19 +1,21 @@
-%define real_name Test-ClassAPI
+%define upstream_name    Test-ClassAPI
+%define upstream_version 1.06
+
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
 Summary:	Test::ClassAPI - Provides basic first-pass API testing for large class trees
-Name:		perl-%{real_name}
-Version:	1.06
-Release: %mkrel 1
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{real_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Test/%{real_name}-%{version}.tar.bz2
-BuildRequires:	perl-devel
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildRequires:	perl(Class::Inspector) >= 1.06
 BuildRequires:	perl(Config::Tiny) >= 2.0
 Buildrequires:  perl(Params::Util)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 For many APIs with large numbers of classes, it can be very useful to be
@@ -22,7 +24,7 @@ inheritance is correct, before doing more comprehensive testing. This
 module aims to provide such a capability.
 
 %prep
-%setup -q -n %{real_name}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -41,4 +43,3 @@ rm -rf %{buildroot}
 %doc Changes README
 %{perl_vendorlib}/Test/ClassAPI.pm
 %{_mandir}/*/*
-
