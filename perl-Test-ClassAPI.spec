@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Release:	6
 
 Summary:	Test::ClassAPI - Provides basic first-pass API testing for large class trees
 License:	GPL+ or Artistic
