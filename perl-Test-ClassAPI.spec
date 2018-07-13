@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Test/%{modname}-%{modver}.tar.bz2
 BuildArch:	noarch
+BuildRequires:	perl(inc::Module::Install::DSL)
 BuildRequires:	perl(Class::Inspector) >= 1.06
 BuildRequires:	perl(Config::Tiny) >= 2.0
 BuildRequires:	perl(Params::Util)
