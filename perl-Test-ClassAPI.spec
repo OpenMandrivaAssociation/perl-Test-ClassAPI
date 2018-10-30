@@ -14,6 +14,7 @@ BuildRequires:	perl(inc::Module::Install::DSL)
 BuildRequires:	perl(Class::Inspector) >= 1.06
 BuildRequires:	perl(Config::Tiny) >= 2.0
 BuildRequires:	perl(Params::Util)
+BuildRequires:	perl(Test::More)
 BuildRequires:	perl-devel
 
 %description
