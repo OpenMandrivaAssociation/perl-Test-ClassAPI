@@ -1,14 +1,14 @@
 %define modname	Test-ClassAPI
-%define modver	1.06
+%define modver	1.07
 
 Summary:	Test::ClassAPI - Provides basic first-pass API testing for large class trees
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	17
+Version:	%{modver}
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Test/%{modname}-%{modver}.tar.bz2
+Url:		https://github.com/karenetheridge/Test-ClassAPI
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/Test-ClassAPI-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl(inc::Module::Install::DSL)
